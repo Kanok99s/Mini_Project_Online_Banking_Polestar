@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1033.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.customersearchnew.customerSearchController">
+    <children>
+        <TableView fx:id="customerSearchTableView" layoutX="80.0" layoutY="37.0" prefHeight="502.0" prefWidth="862.0">
+            <columns>
+                <TableColumn fx:id="idnumberTableColumn" prefWidth="89.0" text="ID number" />
+                <TableColumn fx:id="accounttypeTableColumn" prefWidth="102.0" text="Account_type" />
+                <TableColumn fx:id="firstnameTableColumn" prefWidth="94.0" text="First_name" />
+                <TableColumn fx:id="surnameTableColumn" prefWidth="83.0" text="Surname" />
+                <TableColumn fx:id="dobTableColumn" prefWidth="93.0" text="DOB" />
+                <TableColumn fx:id="emailTableColumn" prefWidth="97.0" text="Email" />
+                <TableColumn fx:id="phonenumberTableColumn" prefWidth="94.0" text="Phone_number" />
+                <TableColumn fx:id="cardnumberTableColumn" prefWidth="92.0" text="Card_number" />
+                <TableColumn fx:id="accountnumberTableColumn" prefWidth="116.0" text="Account_number" />
+            </columns>
+        </TableView>
+        <Label fx:id="searchcustomerLabel" layoutX="30.0" layoutY="14.0" text="Search customer" textFill="#fffefe">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keywordTextField" layoutX="148.0" layoutY="11.0" prefHeight="26.0" prefWidth="792.0" promptText="Keywords..." />
+    </children>
+</Pane>
